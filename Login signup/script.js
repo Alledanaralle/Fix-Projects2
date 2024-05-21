@@ -14,17 +14,17 @@ function swap() {
 
 function showPass() {
     let passField = document.querySelectorAll('#password'),
-        eye = document.querySelector('.eye')
+        eye = document.querySelectorAll('.eye')
 
     passField.forEach((input) => {
         if (input.type === "text") {
             input.type = "password"
-            eye.classList.add("ri-eye-off-line")
-            eye.classList.remove("ri-eye-line")
+            eye.forEach((mata) => {mata.classList.add("ri-eye-off-line")}
+            eye.forEach((mata) => {mata.classList.remove("ri-eye-line")}
         } else {
             input.type = "text"
-            eye.classList.add("ri-eye-line")
-            eye.classList.remove("ri-eye-off-line")
+            eye.forEach((mata) => {mata.classList.add("ri-eye-line")}
+            eye.forEach((mata) => {mata.classList.remove("ri-eye-off-line")}
         }
     })
 }
