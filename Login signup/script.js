@@ -19,12 +19,16 @@ function showPass() {
     passField.forEach((input) => {
         if (input.type === "text") {
             input.type = "password"
-            eye.forEach((mata) => {mata.classList.add("ri-eye-off-line")}
-            eye.forEach((mata) => {mata.classList.remove("ri-eye-line")}
+            eye.forEach((mata) =>{
+                mata.classList.add("ri-eye-off-line")
+                mata.classList.remove("ri-eye-line")
+            })
         } else {
             input.type = "text"
-            eye.forEach((mata) => {mata.classList.add("ri-eye-line")}
-            eye.forEach((mata) => {mata.classList.remove("ri-eye-off-line")}
+            eye.forEach((mata) =>{
+                mata.classList.remove("ri-eye-off-line")
+                mata.classList.add("ri-eye-line")
+            })
         }
     })
 }
