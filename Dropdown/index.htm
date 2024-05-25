@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <aside>
+        <header>
+            <a href="#" class="logo">Logo</a>
+        </header>
+        <label for="search">
+            <i class="ri-search-line"></i>
+            <input type="search" placeholder="Search" id="search">
+        </label>
+        <nav>
+            <a href="#"><i class="ri-dashboard-fill"></i> Home</a>
+            <a class="menu" onclick="dropDown()"><i class="ri-restaurant-line"></i> Menus <i
+                    class="ri-arrow-down-s-line arrow"></i></a>
+            <section class="menu-list">
+                <a href="#">Nasi Goreng</a>
+                <a href="#">Mie Goreng</a>
+                <a href="#">Nasi Ayam Kecap</a>
+                <a href="#">Lele Goreng</a>
+                <a href="#">Capcay</a>
+                <a href="#">Kwetiaw</a>
+                <a href="#">Steak Ayam</a>
+                <a href="#">Steak Sapi</a>
+            </section>
+            <a class="menu-drink" onclick="Drinks()"><i class="ri-drinks-2-line"></i> Drinks <i
+                    class="ri-arrow-down-s-line arrow-drink"></i></a>
+            <section class="drink-list">
+                <a href="#">Air Mineral</a>
+                <a href="#">Es Teh</a>
+                <a href="#">Cappuccino</a>
+                <a href="#">Soda Gembira</a>
+                <a href="#">Jus Jeruk</a>
+                <a href="#">Jus Apel</a>
+                <a href="#">Lemon Tea</a>
+                <a href="#">Smoothie Stroberi</a>
+            </section>
+            <a href="#"><i class="ri-bank-card-line"></i> Payment</a>
+            <a href="#"><i class="ri-questionnaire-line"></i> Help</a>
+        </nav>
+    </aside>
+    <script src="script.js"></script>
+</body>
+
+</html>

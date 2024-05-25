@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: .25s ease;
+    text-wrap: nowrap;
+    border: none;
+    outline: none;
+}
+
+body{
+    min-height: 100dvh;
+    background: linear-gradient(#00000080, #00000080), url(bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+aside{
+    height: 100dvh;
+    width: 20em;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+}
+aside header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 2em 2em 3em;
+    height: 5em;
+}
+aside header .logo{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: clamp(1.75rem,4vw,2.5rem);
+}
+aside label{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: #0000005b;
+    border-radius: 6px;
+    justify-content: space-between;
+    height: 4.5em;
+    overflow: hidden;
+}
+label input{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    font-size: 1rem;
+}
+label input::placeholder{
+    color: #ffffffa8;
+}
+label > i{
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    padding: 0 .75em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+aside nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 2em 2em;
+    gap: .5rem;
+    overflow: auto;
+}
+.menu.active{
+    background: #dddddd56;
+}
+.menu-drink.active{
+    background: #dddddd56;
+}
+aside nav > a{
+    text-decoration: none;
+    color: #ffffffa8;
+    border-radius: 6px;
+    padding: .75em 1em;
+    cursor: pointer;
+    transition: none;
+    position: relative;
+    gap: 1rem;
+    display: flex;
+    margin-top: .3em;
+    align-items: center;
+    width: 100%;
+    font-size: clamp(1.05rem,2.75vw,1.25rem);
+}
+.arrow,.arrow-drink{
+    position: absolute;
+    right: 1em;
+}
+.arrow.active{
+    transform: rotate(180deg);
+}
+.arrow-drink.active{
+    transform: rotate(180deg);
+}
+nav a:hover{
+    background: #dddddd56;
+}
+nav section{
+    width: 100%;
+    height: 0;
+    background: #0000005b;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    
+}
+.menu-list.active{
+    display: flex;
+    height: fit-content;
+}
+.drink-list.active{
+    display: flex;
+    height: fit-content;
+}
+nav section a{
+    font-size: clamp(1rem,2.5vw,1.1rem);
+    width: 100%;
+    text-decoration: none;
+    transition: none;
+    color: #ffffffa8;
+    border-radius: 5px;
+    padding: .6em 0 .5em 1.25em;
+    margin-top: .3em;
+}
